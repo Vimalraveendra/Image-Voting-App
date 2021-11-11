@@ -1,6 +1,6 @@
 import react from 'react';
 
-const Image =({id,image,title})=>{
+const Image =()=>{
 
     return(
         <div>
