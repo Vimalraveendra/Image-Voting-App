@@ -1,11 +1,20 @@
-import react from 'react';
+
 import Image from '../ImageDisplay/Image';
 
 const ImageContainer = ({images})=>{
     console.log(images)
     return(
-        <div>
-           <h2>Image container</h2>
+        <div className="image-container">
+           {
+               images.map(image=>{
+                   return <Image
+                   key={image.id}
+                   id={image.id}
+                   image={image.webformatURL}
+                   title={image.tags}
+                   />
+               })
+           }
            <Image />
         </div>
     )
