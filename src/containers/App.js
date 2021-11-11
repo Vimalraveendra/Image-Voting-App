@@ -6,7 +6,6 @@ import ImageContainer from '../components/ImageContainer/ImageContainer';
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 
-
 const App=()=> {
  const [images,setImages]=useState([])
 
@@ -23,7 +22,7 @@ const App=()=> {
   return (
     <div className="App">
      <h1>Image Voting App</h1>
-     <ImageContainer images={images}/>
+     <ImageContainer images={ images}/>
     </div>
   );
 }
