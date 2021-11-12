@@ -7,15 +7,15 @@ const ImageContainer = ({images})=>{
         <div className="image-container">
            {
                images.map(image=>{
-                   return <Image
-                   key={image.id}
-                   id={image.id}
-                   image={image.webformatURL}
-                   title={image.tags}
+                   return <Image    
+                   key={image.idMeal}
+                   id={image.idMeal}
+                   image={image.strMealThumb}
+                   title={image.strMeal}
                    />
                })
            }
-           <Image />
+          
         </div>
     )
 }
