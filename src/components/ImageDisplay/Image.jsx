@@ -1,10 +1,10 @@
 import react from 'react';
 
-const Image =()=>{
+const Image =({id,title,image})=>{
 
     return(
         <div>
-          <h3>Image render component</h3>
+         <img src={image} alt={title} />
         </div>
     )
 }
