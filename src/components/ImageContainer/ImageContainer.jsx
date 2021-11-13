@@ -1,4 +1,4 @@
-
+import "./imageContainer.css"
 import Image from '../ImageDisplay/Image';
 
 const ImageContainer = ({images})=>{

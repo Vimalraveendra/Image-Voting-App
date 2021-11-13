@@ -1,9 +1,9 @@
-import react from 'react';
+import "./image.css"
 
 const Image =({id,title,image})=>{
 
     return(
-        <div>
+        <div className="image">
          <img src={image} alt={title} />
         </div>
     )
