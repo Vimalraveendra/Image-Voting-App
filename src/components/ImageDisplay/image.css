@@ -1,0 +1,18 @@
+.image {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.image-footer {
+  display: flex;
+  margin: 5px;
+}
+.image-footer .thumb {
+  margin-left: 5px;
+  padding-right: 5px;
+}
