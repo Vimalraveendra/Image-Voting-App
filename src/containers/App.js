@@ -8,6 +8,7 @@ import ImageContainer from '../components/ImageContainer/ImageContainer';
 
 const App=()=> {
  const [images,setImages]=useState([])
+ const [count,setCount]= useState(0)
 
   useEffect(()=>{
     const url=`https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken`
@@ -22,7 +23,7 @@ const App=()=> {
   return (
     <div className="App">
      <h1>Image Voting App</h1>
-     <ImageContainer images={ images}/>
+     <ImageContainer images={ images} count={count}/>
     </div>
   );
 }

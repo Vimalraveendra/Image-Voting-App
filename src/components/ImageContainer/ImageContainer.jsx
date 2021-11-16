@@ -1,7 +1,7 @@
 import "./imageContainer.css"
 import Image from '../ImageDisplay/Image';
 
-const ImageContainer = ({images})=>{
+const ImageContainer = ({images,count})=>{
     return(
         <div className="image-container">
            {
@@ -11,6 +11,7 @@ const ImageContainer = ({images})=>{
                    id={image.idMeal}
                    image={image.strMealThumb}
                    title={image.strMeal}
+                   count={count}
                    />
                })
            }
