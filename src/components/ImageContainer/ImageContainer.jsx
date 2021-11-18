@@ -1,7 +1,7 @@
 import "./imageContainer.css"
 import Image from '../ImageDisplay/Image';
 
-const ImageContainer = ({images,count})=>{
+const ImageContainer = ({images,count,handleIncrement})=>{
     return(
         <div className="image-container">
            {
@@ -12,6 +12,7 @@ const ImageContainer = ({images,count})=>{
                    image={image.strMealThumb}
                    title={image.strMeal}
                    count={count}
+                   handleIncrement={handleIncrement}
                    />
                })
            }
