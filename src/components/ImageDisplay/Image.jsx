@@ -1,13 +1,18 @@
 import "./image.css"
+import {useState}  from 'react'
 
-const Image =({id,title,image,count,handleIncrement})=>{
+const Image =({id,title,image})=>{
+   const[count ,setCount] =useState(0)
 
+   const handleIncrement=(e)=>{
+       console.log("hello",e.target)
+   }
     return(
         <div className="image">
          <img src={image} alt={title} />
          <div className="image-footer">
          <span className="thumb"><i className="fas fa-thumbs-up"></i></span>
-         <span onClick={handleIncrement}>{count}</span>
+         <span id={id} onClick={handleIncrement}>{count}</span>
          </div>
         </div>
     )
