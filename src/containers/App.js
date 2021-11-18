@@ -20,10 +20,16 @@ const App=()=> {
     getImages();
   },[]) 
 
+
+  const handleIncrement=()=>{
+    console.log("hello")
+    setCount(count+1)
+  }
+
   return (
     <div className="App">
      <h1>Image Voting App</h1>
-     <ImageContainer images={ images} count={count}/>
+     <ImageContainer images={ images} count={count} handleIncrement={handleIncrement}/>
     </div>
   );
 }
