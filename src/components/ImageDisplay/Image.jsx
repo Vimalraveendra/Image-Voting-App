@@ -5,15 +5,21 @@ const Image =({id,title,image})=>{
   
 
    const handleIncrement=(e)=>{
-       e.target.textContent++;
+    let target = e.target;
+    target.style.color='blue'; 
+    target.parentNode.nextSibling.textContent++;
    }
     return(
         <div className="image">
          <img src={image} alt={title} />
          <div className="image-footer">
-         <span className="thumb"><i className="fas fa-thumbs-up"></i></span>
-         <span id={id} onClick={handleIncrement}>0</span>
+         <div className="image-left-thumb" >
+         <span className="thumb"><i className="far fa-thumbs-up" onClick={handleIncrement}></i></span>
+         <span >0</span>
          </div>
+         
+         </div>
+         
         </div>
     )
 }
