@@ -17,6 +17,11 @@ const Image =({id,title,image})=>{
          <span className="thumb"><i className="far fa-thumbs-up" onClick={handleIncrement}></i></span>
          <span >0</span>
          </div>
+         <div className="image-right-thumb" >
+         <span className="thumb"><i className="far fa-thumbs-down" onClick={handleIncrement}></i></span>
+         
+         <span >0</span>
+         </div>
          
          </div>
          

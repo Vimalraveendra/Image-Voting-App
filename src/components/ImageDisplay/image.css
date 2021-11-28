@@ -16,3 +16,11 @@ img {
   margin-left: 5px;
   padding-right: 5px;
 }
+
+/* .image-right-thumb{
+  display:flex;
+  align-items:center;
+} */
+.fa-thumbs-down {
+  margin-top: 3px;
+}
